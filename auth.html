@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <script src="./js/checkAuth.js"></script> -->
+
 	<title>Sign In</title>
 </head>
 <body>
@@ -12,10 +14,12 @@
 		<h1 class="reg__title">Авторизация</h1>
 		<div class="reg__main">
 			<input type="text" class="reg__input" placeholder="Введите почту">
-			<input type="text" class="reg__input" placeholder="Введите пароль">
+			<input type="password" class="reg__input" placeholder="Введите пароль">
+			<p id="error"></p>
 			<button class="reg__btn">Продолжить</button>
 			<a href="/registration.html" class="reg__redirect">Регистрация</a>
 		</div>
 	</div>
+	<script src="./js/auth.js"></script>
 </body>
 </html>

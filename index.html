@@ -60,16 +60,16 @@
 		</div>
 	</div>
 	<!-- QR -->
-	<div class="qr">
+	<div class="qr hide">
 		<div class="qr__wrapper">
 			<p class="qr__title">Ваш QR код</p>
 			<div class="qr__img">
-				<img src="./img/QR/qr.png" alt="">
+				<img id="qr" src="./img/QR/qr.png" alt="">
 			</div>
 		</div>
 	</div>
 	<!-- Profile -->
-	<div class="profile">
+	<div class="profile hide">
 		<div class="profile-header">
 			<div class="profile__photo">
 				<img src="./img/Profile/profile.png" alt="">
@@ -106,5 +106,28 @@
 			</div>
 		</div>
 	</div>
+	<div class="history hide">
+		<div class="history__top">
+			<button class="history__close">X</button>
+			<h2 class="history__title">История</h2>
+		</div>
+		<div class="history__main">
+			<div class="history-day">
+				<p class="history-day__title">Сегодня</p>
+				<div class="history-day__item">
+					<div class="history-day__left">
+						<div class="history-day__icon"><img src="" alt=""></div>
+						<p class="history-day__name">Burger King</p>
+					</div>
+					<div class="history-day__right">
+						<p class="history-day__money">+50</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/changePage.js"></script>
+	<script src="./js/test.js"></script>
 </body>
 </html>

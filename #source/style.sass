@@ -9,6 +9,8 @@
 body
     background-color: #F0F2F6
     font-family: "Montserrat", sans-serif
+    transition: .4s
+    
 //  REGISTRATION AND AUTH
 .reg
     &__wrapper
@@ -60,9 +62,10 @@ body
     bottom: 0
     left: 0
     right: 0
-
+    z-index: 99
     background-color: #7A60DB
     height: 100px
+    width: 100vw
     display: flex
     justify-content: space-between
     &__item
@@ -72,6 +75,10 @@ body
         align-items: center
         justify-content: center
         border: 1px solid rgba(102, 78, 190, 0.3)
+        &:active
+            background-color: #5b47a4
+            .circle
+                background-color: #5b47a4
         .circle
             width: 100%
             height: 100%
@@ -92,7 +99,6 @@ body
         row-gap: 20px
         justify-content: space-between
     &__wrapper
-        display: none
 .grid-item
     width: 100%
     &__img
@@ -139,7 +145,6 @@ body
 
 // QR
 .qr
-    display: none
     &__wrapper
         width: 60%
         height: 100vh
@@ -168,8 +173,9 @@ body
 .profile
     max-width: 80%
     margin: 0 auto
-    margin-top: 50px
+    margin-top: 30px
     text-align: center
+    height: 100vh
     &-header
         display: flex
         gap: 20px
@@ -194,3 +200,83 @@ body
     &__title
         font-size: 24px
         font-weight: bold
+.profile-points
+    margin-bottom: 25px
+    &__title
+        font-size: 27px
+        margin-bottom: 5px
+    &__number
+        font-size: 40px
+        font-weight: bold
+        color: #7A60BD
+.profile-history
+    
+    &__title
+        font-size: 27px
+        margin-bottom: 10px
+
+    &__item
+        display: flex
+        justify-content: space-between
+        max-width: 260px
+        margin: 0 auto
+        height: 44px
+        align-items: center
+        background-color: #7A60DB
+        color: #fff
+        padding: 0 15px
+        font-size: 13px
+        &.transparent
+            background-color: #F0F2F6 
+            color: #7A60DB
+    &__btn
+        background-color: #17182B
+        color: #fff
+        font-size: 15px
+        font-weight: bold
+        width: 260px
+        height: 44px
+        border-radius: 0 0 13px 13px
+
+.history
+    margin-top: 30px
+    &__top
+        display: flex
+        // padding-left: 15px
+        justify-content: center
+        position: relative
+        margin-bottom: 30px
+    &__close
+        position: absolute
+        left: 15px
+        font-size: 15px
+        font-weight: bold
+        width: 30px
+        height: 30px
+        border-radius: 13px
+        background-color: #17182B
+        color: #fff
+    &__title
+        font-size: 30px
+.history-day
+    font-size: 13px
+    &__title
+        margin-left: 15px
+        font-size: 17px
+        opacity: 0.8
+        margin-bottom: 10px
+    &__item
+        display: flex
+        height: 44px
+        width: 100%
+        padding: 0 15px
+        align-items: center
+        justify-content: space-between
+        border: 1px solid #B5BAC3
+        border-left: 0
+        border-right: 0
+    &__left
+        display: flex
+        gap: 10px
+.hide
+    display: none

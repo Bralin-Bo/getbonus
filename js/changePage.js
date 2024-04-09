@@ -23,16 +23,19 @@ btns.forEach((btn, index) => {
             bonusPage.classList.remove('hide')
             qrPage.classList.add('hide')
             profilePage.classList.add('hide')
+            history.classList.add('hide')
         }
         else if(index==1){
             bonusPage.classList.add('hide')
             qrPage.classList.remove('hide')
             profilePage.classList.add('hide')
+            history.classList.add('hide')
         }
         else if(index==2){
             bonusPage.classList.add('hide')
             qrPage.classList.add('hide')
             profilePage.classList.remove('hide')
+            history.classList.add('hide')
         }
     });
 });

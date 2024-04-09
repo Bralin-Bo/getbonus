@@ -5,19 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Sign up</title>
-	<script src="./js/checkAuth.js"></script>
+	<!-- <script src="./js/checkAuth.js"></script> -->
 </head>
 <body>
 	<div class="reg__wrapper">
 		<div class="reg__logo"></div>
 		<h1 class="reg__title">Регистрация</h1>
 		<div class="reg__main">
-			<input type="text" class="reg__input" placeholder="Введите почту">
-			<input type="text" class="reg__input" placeholder="Введите фио">
-			<input type="text" class="reg__input" placeholder="Введите пароль">
+			<input type="text" class="reg__input regInputs" placeholder="Введите почту">
+			<input type="text" class="reg__input regInputs" placeholder="Введите фио">
+			<input type="password" class="reg__input regInputs" placeholder="Введите пароль">
+			<p id="error" style="color:red"></p>
 			<button class="reg__btn" id="regBtn">Продолжить</button>
 			<a href="/auth.html" class="reg__redirect">Войти</a>
 		</div>
 	</div>
+	<div class="errorpc">Данное приложение поддерживается лишь на мобильных устройствах</div>
+	<script src="./js/auth.js"></script>
 </body>
 </html>

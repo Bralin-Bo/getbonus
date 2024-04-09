@@ -13,13 +13,14 @@
 		<div class="reg__logo"></div>
 		<h1 class="reg__title">Авторизация</h1>
 		<div class="reg__main">
-			<input type="text" class="reg__input" placeholder="Введите почту">
-			<input type="password" class="reg__input" placeholder="Введите пароль">
-			<p id="error"></p>
-			<button class="reg__btn">Продолжить</button>
+			<input type="text" class="reg__input authInputs" placeholder="Введите почту">
+			<input type="password" class="reg__input authInputs" placeholder="Введите пароль">
+			<p id="error" style="color:red"></p>
+			<button class="reg__btn" id="authBtn">Продолжить</button>
 			<a href="/registration.html" class="reg__redirect">Регистрация</a>
 		</div>
 	</div>
+	<div class="errorpc">Данное приложение поддерживается лишь на мобильных устройствах</div>
 	<script src="./js/auth.js"></script>
 </body>
 </html>
